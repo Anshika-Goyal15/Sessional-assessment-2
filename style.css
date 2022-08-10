@@ -67,9 +67,12 @@ a:hover{
     padding: 20px;
     margin-right: 50px;
     margin-bottom: 50px;
+   
 }
-img{
-    border-radius: 50%;
+
+.card:hover{
+    background: aquamarine;
+    transition: .5s;
 }
 .checkbtn{
     font-size: 30px;
@@ -85,10 +88,11 @@ img{
     display: none;
 }
 .field{
-
+    font-weight: 500;
 }
-.category{
+span.category{
     font-weight: bold;
+    font-size: 18px;
 }
 
 /* responsiveness of Navigation Bar */

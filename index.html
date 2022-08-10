@@ -113,21 +113,22 @@
             document.getElementById("usersData").innerHTML = data
               .map(
                 (person) => `
-            <div class="card" style="width: 45%;">
+            <div class="card" style="width: 45%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7); border-radius: 5px;">
                 
                 <div class="field">
-                    <span class="category">Id</span> : ${person.id}
-                    <span class="category">Name</span> : ${person.name}
-                    <span class="category">Username</span> : ${person.username}
+                    <h4>Details</h4>
+                    <span class="category">Id</span> : ${person.id} &nbsp
+                    <span class="category">Name</span> : ${person.name} &nbsp
+                    <span class="category">Username</span> : ${person.username} &nbsp
                     <span class="category">Email</span> : ${person.email}
                 </div>
                 <div class="field">
-                    <h3>Address</h3>
-                    <span class="category">Street</span> : ${person.address.street}
-                    <span class="category">Suite</span> : ${person.address.suite}
-                    <span class="category">City</span> : ${person.address.city}
-                    <span class="category">Zipcode</span> : ${person.address.zipcode}
-                    <span class="category">Geo</span> : lat:${person.address.geo.lat} lng:${person.address.geo.lng}
+                    <h4>Address</h4>
+                    <span class="category">Street</span> : ${person.address.street} &nbsp
+                    <span class="category">Suite</span> : ${person.address.suite} &nbsp
+                    <span class="category">City</span> : ${person.address.city} &nbsp
+                    <span class="category">Zipcode</span> : ${person.address.zipcode} &nbsp
+                    <span class="category">Geo</span> : lat:${person.address.geo.lat} &nbsp lng:${person.address.geo.lng}
                 </div>
                 <div class="field">
                     <span class="category">Phone</span> : ${person.phone}
@@ -136,9 +137,9 @@
                     <span class="category">Website</span> : ${person.website}
                 </div>
                 <div class="field">
-                    <h3>Company</h3>
-                    <span class="category">Name</span> : ${person.company.name}
-                    <span class="category">catchPhrase</span> : ${person.company.catchPhrase}
+                    <h4>Company</h4>
+                    <span class="category">Name</span> : ${person.company.name} &nbsp
+                    <span class="category">catchPhrase</span> : ${person.company.catchPhrase} &nbsp
                     <span class="category">Bs</span> : ${person.company.bs}
                 </div>
 
