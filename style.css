@@ -10,6 +10,8 @@
 body{
     font-family: montserrat;
     background-image: url('c.png');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 nav{
@@ -59,10 +61,12 @@ a:hover{
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+    padding: 20px 0px 20px 90px;
 }
 .card{
-    margin-left: 15px;
-    margin-bottom: 10px;
+    padding: 20px;
+    margin-right: 50px;
+    margin-bottom: 50px;
 }
 img{
     border-radius: 50%;
@@ -79,6 +83,12 @@ img{
 
 #check{
     display: none;
+}
+.field{
+
+}
+.category{
+    font-weight: bold;
 }
 
 /* responsiveness of Navigation Bar */
@@ -104,7 +114,7 @@ img{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: palevioletred;
+        background: grey;
         top: 80px;
         left: -100%;
         text-align: center;
@@ -126,6 +136,17 @@ img{
     #check:checked ~ ul{
         left: 0;
 
+    }
+}
+@media only screen and (max-width: 900px){
+    #usersData{
+        padding:20px;
+    }
+    .card{
+        width:100% !important;
+        padding:20px;
+        margin-right: unset;
+        margin-bottom: 20px;
     }
 }
 
