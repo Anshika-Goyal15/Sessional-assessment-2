@@ -1,5 +1,6 @@
-
+const submit = document.getElementById('hitme');
 function getPerson() {
+    console.log("hi");
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -26,3 +27,4 @@ function getPerson() {
   xhttp.open("GET", "https://jsonplaceholder.typicode.com/users?utm_source=Mailerlite&utm_medium=E-mail&utm_campaign=Test%20Series&utm_term=2022-08-09", true);
   xhttp.send();
 }
+submit.addEventListener('click',getPerson);

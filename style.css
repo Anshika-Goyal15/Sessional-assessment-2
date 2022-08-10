@@ -45,11 +45,27 @@ nav ul li a{
     text-transform: uppercase;
 }
 
-a:hover{
-    background: #1b9bff;
-    transition: .5s;
+li{
+    text-decoration: none;
 }
 
+a:hover{
+    background: darkslategrey;
+    transition: .5s;
+    color: white;
+}
+#usersData{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.card{
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+img{
+    border-radius: 50%;
+}
 .checkbtn{
     font-size: 30px;
     color: white;
@@ -104,7 +120,7 @@ a:hover{
     a:hover 
     {
         background: none;
-        color: #0082e6;
+        color: white;
     }
     #check:checked ~ ul{
         left: 0;
@@ -116,5 +132,6 @@ a:hover{
 /* Form */
 #userform
 {
-    margin-left: 550px;
+    margin: 20px;
+    width: 50%;
 }
