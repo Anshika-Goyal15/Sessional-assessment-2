@@ -32,7 +32,51 @@
         </ul>
     </nav>
 
+    <!--Users Data Form-->
 
+    <div id="userform">
+        <h3>User Data Form</h3>
+        <form>
+            <label for="Id">Id</label><br>
+            <input type="number" id="Id" min="0" max="10" maxlength="1" required ><br>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Anshika Goyal" required><br>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" placeholder="anshi_12" required><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="anshi12@gmail.com" required><br>
+            <label for="address">Address</label><br>
+            <label for="street">Street </label> &nbsp
+            <input type="text" id="street"> &nbsp &nbsp 
+            <label for="suite">Suite</label> &nbsp &nbsp &nbsp&nbsp
+            <input type="text" id="suite" ><br><br>
+            <lable for="city">City</lable> &nbsp &nbsp&nbsp
+            <input typr="text" id="city" required> &nbsp &nbsp
+            <label for="zipcode">Zipcode</label> &nbsp
+            <input type="number"id="zipcode" required><br>
+            <label for="Geo">Geo</label><br>
+            <label for="lat">Lat</label> &nbsp &nbsp &nbsp
+            <input type="number"id="lat"> &nbsp &nbsp
+            <label for="lng">Lng</label> &nbsp &nbsp &nbsp &nbsp &nbsp 
+            <input type="number" id="lng"><br>
+            <label for="phone">Phone number</label><br>
+            <input type="number" id="phone" required><br>
+            <label for="website">Website</label><br>
+            <input type="text" id="website" placeholder="abc.org"><br>
+            <label for="company">Company</label><br>
+            <label for="name">Name</label>&nbsp
+            <input type="text" id="name" required>&nbsp
+            <label for="CatchPhrase">CatchPhrase</label>
+            <input type="text" id="CatchPhrase"><br><br>
+            <label for="bs">Bs</label>&nbsp&nbsp &nbsp &nbsp&nbsp
+            <input type="text" id="bs"><br><br>
+            <input type="submit" value="Submit">&nbsp &nbsp
+            <button type="button" onclick="getPerson()">Request data</button>
+        </form>
+    </div>
+    <!--<button type="button" onclick="getPerson()">Request data</button>-->
+    <div id="usersData"></div>
 
+    
 </body>
 </html>
