@@ -9,6 +9,7 @@
 
 body{
     font-family: montserrat;
+    background-image: url('c.png');
 }
 
 nav{
@@ -50,7 +51,7 @@ li{
 }
 
 a:hover{
-    background: darkslategrey;
+    background: aliceblue;
     transition: .5s;
     color: white;
 }
@@ -103,7 +104,7 @@ img{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #2c3e50;
+        background: palevioletred;
         top: 80px;
         left: -100%;
         text-align: center;
@@ -135,3 +136,4 @@ img{
     margin: 20px;
     width: 50%;
 }
+
